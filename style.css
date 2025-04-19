@@ -67,6 +67,7 @@ body {
     height: 50px;
     font-size: 0.8em;
     border-color: rgb(50, 62, 90); 
+    cursor:pointer;
   }
   .btn:hover{
     background-color: rgb(157, 157, 157);
