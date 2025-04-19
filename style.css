@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: system-ui, sans-serif;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit:fill;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: baseline;
+    align-items:center;
+    height: 100vh;
+    padding: 0 5%;
+    z-index: 2;
+    gap: 200px;
+  }
+  
+  .welcome {
+    padding: 40px;
+    border: 2px solid antiquewhite;
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 40%;
+    border-radius: 25px;
+    border-style:groove;
+    transition:2s ease-in-out;
+    border-color: rgb(23, 40, 67);
+
+  }
+  .welcome:hover{
+    background: rgba(49, 49, 49, 0.4);
+    transform: translateY(-0.5em);
+    box-shadow: 10px 20px 20px rgb(66, 79, 83);
+    border-color: rgb(33, 65, 74);
+  }
+  
+  .message-box {
+    padding: 10px;
+    max-width: 30%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    white-space: pre-wrap;
+    padding: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+  }
+  .btn{
+    border-radius: 6x;
+    background:  rgba(199, 26, 26, 0.4);
+    border-color: thistle;
+    border-style:solid;
+    border-radius:25px;
+    transition:2s ease-in-out;
+    width: 150px;
+    height: 50px;
+    font-size: 0.8em;
+    border-color: rgb(50, 62, 90); 
+  }
+  .btn:hover{
+    background-color: rgb(157, 157, 157);
+    transform: translateY(-1em);
+    box-shadow: 10px 5px 20px lightblue;
+    border-color: rgb(78, 197, 227);
+
+  }
+  
