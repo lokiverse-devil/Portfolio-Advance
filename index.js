@@ -1,32 +1,32 @@
-let message = "Being a coder is never easy ................. Life gives you multiple ups and downs but you are a damn CODER!!";
 let i = 0;
 let interval;
-let hasShownMessage = false; // NEW FLAG
+let hasShownp = false;
 
-function showMessage() {
-  const messageBox = document.getElementById("messageBox");
-  messageBox.textContent = "";
+function revealMessage() {
+  if (hasShownp) return;
+
+  $("#welcomeBox").fadeOut(200, function () {
+    $("#messageBox").fadeIn(600, function () {
+      typeMessage();
+    });
+  });
+}
+
+function typeMessage() {
+  const fullMessage = document.getElementById("msg").textContent;
+  const typedText = document.getElementById("typedText");
+  typedText.textContent = ""; // Clear previous if any
   i = 0;
 
   clearInterval(interval);
   interval = setInterval(() => {
-    if (i < message.length) {
-      messageBox.textContent += message.charAt(i);
+    if (i < fullMessage.length) {
+      typedText.textContent += fullMessage.charAt(i);
       i++;
     } else {
       clearInterval(interval);
-      hasShownMessage = true; 
+      hasShownp = true;
+      $(".btn2").fadeIn(200); // Show button smoothly
     }
   }, 50);
 }
-
-$(document).ready(function () {
-$("#welcomeBox").hover(function () {
-  if (!hasShownMessage) {
-    $("#messageBox").fadeIn();
-    showMessage();
-  } else {
-    $("#messageBox").fadeIn(); 
-  }
-});
-});
