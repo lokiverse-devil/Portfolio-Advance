@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+body{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
