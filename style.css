@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 body {
-    margin: 0;
     font-size: 1.5em;
-    font-family: system-ui, sans-serif;
     color: white;
     overflow: hidden;
     text-align: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-shadow: #007bff;
+    color:  rgb(63, 63, 63);
   }
   
   #bg-video {
@@ -25,55 +31,89 @@ body {
     padding: 0 5%;
     z-index: 2;
     gap: 200px;
+    
+    
   }
   
   .welcome {
     padding: 40px;
-    border: 2px solid antiquewhite;
-    background: rgba(0, 0, 0, 0.4);
-    max-width: 40%;
-    border-radius: 25px;
-    border-style:groove;
+    
+   
+    text-align: center  ;
+    font-size: 1.5em;
     transition:2s ease-in-out;
-    border-color: rgb(23, 40, 67);
+   
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 800;
+    
 
   }
   .welcome:hover{
     background: rgba(49, 49, 49, 0.4);
     transform: translateY(-0.5em);
     box-shadow: 10px 20px 20px rgb(66, 79, 83);
-    border-color: rgb(33, 65, 74);
+    color:  rgb(255, 238, 238);
+  
   }
   
   .message-box {
     padding: 10px;
-    max-width: 30%;
+    width: 100%;
     display: none;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     white-space: pre-wrap;
     padding: 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    color:  rgb(255, 252, 252);
   }
   .btn{
-    border-radius: 6x;
-    background:  rgba(199, 26, 26, 0.4);
+    border-radius: 6x; 
+    background:  rgb(56, 56, 57);
     border-color: thistle;
     border-style:solid;
     border-radius:25px;
     transition:2s ease-in-out;
     width: 150px;
     height: 50px;
-    font-size: 0.8em;
-    border-color: rgb(50, 62, 90); 
-    cursor:pointer;
+    font-size: 0.5em;
+    border-color: rgb(77, 76, 76); 
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
   }
   .btn:hover{
-    background-color: rgb(157, 157, 157);
+    background-color: rgb(53, 53, 53);
     transform: translateY(-1em);
-    box-shadow: 10px 5px 20px lightblue;
+    box-shadow: 10px 5px 20px rgb(104, 161, 180);
     border-color: rgb(78, 197, 227);
+    width:170px;
+    color:  rgb(255, 238, 238);
 
   }
+  .btn2 {
+    border-radius: 6x; 
+    background:  rgb(56, 56, 57);
+    border-color: thistle;
+    border-style:solid;
+    border-radius:25px;
+    transition:2s ease-in-out;
+    width: 150px;
+    height: 50px;
+    font-size: 0.5em;
+    border-color: rgb(77, 76, 76); 
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+  }
   
+
+  .btn2:hover{
+    background-color: rgb(53, 53, 53);
+    transform: translateY(1em);
+    box-shadow: 10px 5px 20px rgb(104, 161, 180);
+    border-color: rgb(78, 197, 227);
+    width:170px;
+    color:  rgb(255, 238, 238);
+
+  }
